@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        setSupportActionBar(toolbar)
         tab_layout.addTab(tab_layout.newTab().setText("tab 1"))
         tab_layout.addTab(tab_layout.newTab().setText("tab 2"))
         tab_layout.tabGravity = GRAVITY_FILL
